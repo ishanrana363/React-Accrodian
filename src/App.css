@@ -1,0 +1,32 @@
+.wrapper{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.accordion{
+  width: 700px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: rgb(178, 178, 150);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.content{
+    max-height: 0px;
+    background-color: gray;
+    overflow: hidden;
+    transition: all  0.5s cubic-bezier(0,1,0,1) ;
+}
+
+
+.content.isShow {
+  height: auto;
+    transition: all  0.5s cubic-bezier(0,1,0,1) ;
+    max-height: 1000px;
+}
